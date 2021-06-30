@@ -1,0 +1,305 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 16px;
+}
+
+a {
+    color: rgb(160, 160, 160);
+    /* text-decoration: none; */
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 26px;
+    }
+    p, a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 20px;
+    }
+    p, a {
+        font-size: 12px;
+    }
+}
+
+/* 
+    Navigation Bar
+*/
+#navbar {
+    z-index: 1000;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#navbar .header {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar .header p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+#navbar .header #drop-down-button {
+    display: none;
+}
+
+#navbar .header #drop-down-button img {
+    height: 12px;
+}
+
+#navbar #nav-buttons {
+    width: 500px;
+    display: flex;
+    justify-content: start;
+}
+
+#navbar #nav-buttons a {
+    color: rgb(160, 160, 160);
+    font-size: 15px;
+    padding-right: 5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbar #nav-buttons #nav-about-me {
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar .header {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        justify-content: space-between;
+        width: 96%; /* left and right paddings are 2% */
+    }
+
+    #navbar .header #drop-down-button {
+        display: contents;
+    }
+
+    #navbar #nav-buttons {
+        display: none;
+        flex-direction: column;
+    }
+
+    #navbar #nav-buttons a {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        text-align: left;
+    }
+
+}
+
+.project {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.project .description {
+    width: 50%;
+    padding-top: 12vh;
+}
+
+.project .description div {
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-width: 800px) {
+    .project .description div {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project .description {
+        width: 100%;
+    }
+    .project .description div {
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+/* 
+    About me
+*/
+
+#about-me {
+    justify-content: center;
+    background-image: url("content/san_fran_bay.jpeg"); 
+    background-size: cover;
+    background-position: 100% 0%;
+}
+
+#about-me div .links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 0;
+}
+
+#about-me div .links a {
+    color: rgb(231, 231, 231);
+}
+
+/*
+    Entropy
+*/
+#entropy {
+    justify-content: space-between;
+}
+
+#entropy .description div .logo {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+#entropy .description div a {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#entropy .screenshot {
+    height: auto;
+    width: 50%;
+    max-height: 550px;
+    object-fit: contain;
+    max-width: 100%;
+    position: absolute; 
+    bottom: 0;  
+    right: 0;
+}
+
+#entropy .screenshot-cropped {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #entropy .screenshot { 
+        margin-left: auto;
+        margin-right: auto;  
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 35%;
+        max-height: 250px;
+        height: auto;
+        display: block;
+    }
+
+    /* #entropy .screenshot-cropped {
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute; 
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 35%;
+    } */
+}
+
+/*
+    Control Algorithm
+*/
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#rocket-guidance {
+    position: relative;
+    justify-content: flex-end;
+}
+
+#rocket-guidance div {
+    position: absolute;
+    color: white;
+}
+
+#rocket-guidance .description div a {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#rocket-guidance .description div .links {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+/*
+    This website.
+*/
+
+#this-website {
+    background-image: url("content/this_website.png"); 
+    background-size: cover;
+    color: white;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+    #this-website { 
+        background-image: url("content/this_website_blurry.png"); 
+    }
+}
+
+
+
+
+
+

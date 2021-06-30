@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+</head>
+
+<script type="text/javascript" , src="main.js"></script>
+
+<body>
+    <section id='navbar'>
+        <div class="header">
+            <p>John Bensen</p>
+            <div id="drop-down-button">
+                <img src="content/menu.png" id="menu-button" onclick="changeMenu()">
+            </div>
+        </div>
+        <div id="nav-buttons">
+            <a href="#about-me" id="nav-about-me">About Me</a>
+            <a href="#entropy" id="nav-entropy">Entropy</a>
+            <a href="#rocket-guidance" id="nav-rocket-guidance">Rocket Guidance</a>
+            <a href="#this-website" id="nav-this-website">This Website</a>
+        </div>
+    </section>
+
+    <main>
+        <section class="project" id="about-me">
+            <div class="description">
+                <div>
+                    <h1>Hi, I'm John</h1>
+                    <p>
+                        I am a rising junior studying computer engineering at Purdue University. I
+                        love coding, travelling, meeting new people, and spending time with people I
+                        already know.
+                    </p>
+                    <p>
+                        This website is my way of showing off everything that I've done, enjoy!
+                    </p>
+                    <p>
+                        Contact me at: jebbensen@gmail.com
+                    </p>
+                    <div class="links">
+                        <a href="https://github.com/JohnBensen1000" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/john-bensen-800328191/" target="_blank">Linkedin</a>
+                        <a href="content/JohnBensenResume.pdf" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project" id="entropy">
+            <div class="description">
+                <div>
+                    <img src="content/Entropy.PNG" class="logo">
+                    <h1>Entropy</h1>
+                    <p>
+                        Entropy is a social media app that prioritizes the users' mental health.
+                        I am working on the full codebase myself, using Flutter to build the frontend
+                        and Django, Firebase, and Google Cloud Platform to build the backend. We are
+                        excited to say that our first beta has been completed, and is currently waiting
+                        for approval from Apple before launching on TestFlight.
+                    </p>
+                    <a href="https://www.appentropy.com/" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="content/entropy_screenshot.PNG" class="screenshot">
+
+            </div>
+        </section>
+
+        <section class="project" id="rocket-guidance">
+            <video autoplay muted loop class="background">
+                <source src="content/grasshopper.mp4" type="video/mp4">
+            </video>
+            <div class="description">
+                <div>
+                    <h1>Rocket Guidance</h1>
+                    <p>
+                        I worked on a team that developed software capable of landing a rocket. Our code is based 
+                        on an algorithm developed by Blackmore, L., Carson, J., and Açıkmese, B. The algorithm maps 
+                        out a path that lands the rocket at or near the target location while minimizing fuel usage.
+                        The video you see now is a simulated rocket landing itself using the software that we wrote.
+                    </p>
+                    <div class="links">
+                        <a href="content/Convexification.pdf" target="_blank">
+                            Original Paper
+                        </a>
+                        <a href="https://github.com/Planetary-Soft-Landing-at-Purdue/PSL-with-KSP/tree/develop"
+                            target="_blank">
+                            Our Code
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="project" id="this-website">
+            <div class="description">
+                <div>
+                    <h1>This Website</h1>
+                    <p>
+                        This website is a fun way for me to learn web development and
+                        show off everything that I've done. I am just using Javascript, HTML 
+                        and CSS for now.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
